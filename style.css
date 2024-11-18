@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  border: none;
+}
+header {
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgb(213, 223, 231);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.316);
+}
+nav ul {
+  display: flex;
+  gap: 2.2rem;
+  font-size: 1.1rem;
+  text-wrap: nowrap;
+}
+nav a {
+  transition: all 0.4s ease;
+}
+.active--link {
+  color: #19a23d;
+  position: relative;
+}
+.active--link::before {
+  position: absolute;
+  content: "";
+  background-color: #19a23d;
+  height: 3px;
+  width: 45%;
+  left: 0;
+  bottom: -5px;
+}
+nav a:hover {
+  color: #19a23d;
+  position: relative;
+}
+
+nav a:hover::before,
+nav a.active--link::before {
+  position: absolute;
+  content: "";
+  background-color: #19a23d;
+  height: 3px;
+  width: 45%;
+  left: 0;
+  bottom: -5px;
+}
+
+header .content {
+  background: url(images/hero4.png);
+  background-size: cover;
+  text-align: left;
+  padding: 8rem 4rem 7rem 4rem;
+  background-repeat: no-repeat;
+}
+header h2 {
+  font-size: 4.5rem;
+  line-height: 0.9;
+  font-weight: 650;
+}
+header .green--header {
+  color: rgba(249, 136, 49, 0.703);
+}
+header h3 {
+  font-size: 2.2rem;
+  color: #fff;
+}
+header p {
+  font-size: 0.9rem;
+  margin: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(138, 89, 245);
+}
+
+.btn--shop {
+  border: none;
+  font-size: 1.2rem;
+  margin: 0.3rem 3rem;
+  font-weight: 700;
+  padding: 1rem 4rem;
+  background: url(images/button.png);
+  /* background-repeat: no-repeat; */
+  color: brown;
+}
+
+.feature--container {
+  padding: 3rem 0.5rem;
+  display: flex;
+  /* gap: 1rem; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.feature--container .container {
+  padding: 1rem;
+  border: 1px solid rgb(178, 229, 254);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+}
+.feature--container .container:hover {
+  box-shadow: 5px 5px 15px #00000037;
+}
+.feature--container img {
+  width: 8rem;
+  padding-bottom: 1rem;
+}
+.feature--container p {
+  text-align: center;
+  padding: 0.25rem 0.4rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #19a23d;
+  width: fit-content;
+  border-radius: 6px;
+}
+
+/*  */
+.cont-1 p {
+  background-color: lightblue;
+}
+.cont-2 p {
+  background-color: lightpink;
+}
+.cont-3 p {
+  background-color: #caf9a6;
+}
+.cont-4 p {
+  background-color: lightblue;
+}
+.cont-5 p {
+  background-color: rgb(223, 207, 255);
+}
+.cont-6 p {
+  background-color: bisque;
+}
+.title {
+  text-align: center;
+}
+.title h1 {
+  font-size: 3rem;
+  padding: 0.7rem 0;
+}
+.collection--container {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  row-gap: 2rem;
+}
+.collection {
+  padding: 1rem;
+  border: 1px solid rgb(228, 223, 223);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: all 0.4s;
+}
+.collection:hover {
+  box-shadow: 5px 5px 15px #00000037;
+}
+.collection img {
+  max-width: 14rem;
+  border-radius: 15px;
+}
+.collection h2 {
+  font-size: 1rem;
+}
+.collection p {
+  color: #a3a2a2;
+}
+
+.collection .price {
+  display: flex;
+  color: #3ac0f9;
+  justify-content: space-between;
+}
+.price div {
+  padding: 1rem 0;
+  width: 30px;
+  height: 30px;
+  background-color: #d3eefa;
+  border-radius: 50%;
+}
+
+.section--one .banner {
+  background: url(images/banner/b2.jpg);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+.section--one .banner h1 {
+  font-size: 3rem;
+}
+.section--one .banner p {
+  font-size: 1.4rem;
+  font-weight: 630;
+}
+.section--one .btn {
+  padding: 0.8rem 1.2rem;
+  width: fit-content;
+  border-radius: 5px;
+  transition: all 0.15s;
+}
+.section--one .btn:hover {
+  color: #fff;
+  background-color: #19a23d;
+}
+
+.big--banner {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  color: #fff;
+  line-height: 1.2;
+}
+.big--banner button {
+  background-color: transparent;
+  padding: 0.7rem 1.5rem;
+  color: inherit;
+  margin: 1.5rem 0;
+  border: 1px solid #fff;
+  transition: all 0.4s;
+}
+.big--banner h5 {
+  font-size: 1.2rem;
+}
+.big--banner h3 {
+  font-size: 2.5rem;
+}
+
+.bann:hover button {
+  background-color: #19a23d;
+  border-color: #19a23d;
+}
+.left__banner {
+  background: url(images/banner/b17.jpg);
+}
+.right__banner {
+  background: url(images/banner/b10.jpg);
+}
+.bann {
+  padding: 3rem 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#footer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0rem;
+  padding: 2rem;
+  background-color: rgb(213, 223, 231);
+  margin-top: 2rem;
+  padding: 1rem 1rem 3rem 1rem;
+}
+#footer img {
+  width: 150px;
+  display: block;
+}
+.about,
+.myaccount,
+.install {
+  display: flex;
+  flex-direction: column;
+}
+.download {
+  display: flex;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.download img {
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+.copy--right {
+  font-family: oblique;
+  text-align: center;
+  grid-column: 2;
+  color: rgb(16, 7, 1);
+  text-decoration: overline;
+}
+#footer a:hover {
+  color: #19a23d;
+}
+/* Media Query */
+
+@media (max-width: 1100px) {
+  .feature--container {
+    justify-content: center;
+    gap: 1rem;
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 718px) {
+  .feature--container {
+    padding-top: 11rem;
+  }
+}
+
+@media (max-width: 620px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .feature--container {
+    padding-top: 17rem;
+  }
+}
+@media (max-width: 420px) {
+  nav {
+    position: relative;
+  }
+  .big--banner {
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  header .content {
+    padding: 1rem;
+    background-size: contain;
+    background: none;
+  }
+  .feature--container {
+    padding-top: 25rem;
+  }
+}
